@@ -1,0 +1,54 @@
+.nav {
+  @include outer-container;
+  padding: 0 $container-inner-spacing;
+  margin: 0;
+  position: relative;
+
+  &-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &-item {
+    display: inline-block;
+    padding: $base-spacing 0;
+  }
+
+  &-item-left {
+    float: left;
+    padding-right: $large-spacing;
+  }
+
+  &-item-right {
+    float: right;
+    padding-left: $large-spacing;
+  }
+
+  &-item-logo {
+    width: $header-logo-size;
+    height: $header-logo-size;
+    margin: $small-spacing auto;
+    padding: $small-spacing;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -($header-logo-size/2);
+    border-radius: $header-logo-size;
+    border: rem(4px) solid $dark-gray;
+
+    .logo {
+      margin-top: -5px;
+    }
+  }
+
+  &-link {
+    color: $nav-link-color;
+    font-size: $nav-font-size;
+    text-decoration: none;
+    font-family: $nav-font-family;
+
+    &:hover, &:active {
+      color: $active-nav-link-color;
+    }
+  }
+}
