@@ -1,0 +1,23 @@
+.customer {
+	background-color: $bg-gray;
+	padding: $micro-spacing 0;
+
+	&__list {
+		width: 100%;
+		margin-top: $large-spacing;
+		margin-bottom: 0px;
+		padding: 0;
+	}
+	
+	&__item {
+		display: inline-block;
+		width: rem(130px);
+		height: auto;
+		padding: rem(6px); 
+	}
+
+	&__logo {
+		width: 100%;
+		height: auto;
+	}
+}

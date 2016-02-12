@@ -1,9 +1,10 @@
 .section {
   @include outer-container;
-  margin: $large-spacing 0;
+  margin: $large-spacing auto;
   padding: 0 $container-inner-spacing;
 
   &-title {
     text-align: center;
+    margin-bottom: $small-spacing;
   }
 }

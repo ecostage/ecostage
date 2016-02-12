@@ -15,3 +15,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem "middleman-react"
 gem "jquery-middleman"
+gem "font-awesome-sass"

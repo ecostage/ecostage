@@ -1,7 +1,6 @@
 .nav {
   @include outer-container;
   padding: 0 $container-inner-spacing;
-  margin: 0;
   position: relative;
 
   &-list {
@@ -16,27 +15,29 @@
 
   &-item-left {
     float: left;
-    padding-right: $large-spacing;
+    padding-right: 12%;
   }
 
   &-item-right {
     float: right;
-    padding-left: $large-spacing;
+    padding-left: 12%;
   }
 
   &-item-logo {
     width: $header-logo-size;
     height: $header-logo-size;
-    margin: $small-spacing auto;
     padding: $small-spacing;
     background-color: #fff;
     position: absolute;
     left: 50%;
+    margin-top: $small-spacing - rem(10px);
     margin-left: -($header-logo-size/2);
+    margin-right: auto;
+    margin-bottom: $small-spacing;
     border-radius: $header-logo-size;
     border: rem(4px) solid $dark-gray;
 
-    .logo {
+    .nav-logo {
       margin-top: -5px;
     }
   }

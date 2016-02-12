@@ -1,3 +1,12 @@
+.work-carousel {
+  position: relative;
+  height: 400px;
+
+  .carousel-item {
+    position: absolute;
+  }  
+}
+
 .carousel {
   &-enter {
     opacity: 0.01;

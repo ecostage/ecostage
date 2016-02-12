@@ -5,14 +5,14 @@ carouselData = [
     title: "MapBiomas",
     caption: "Lorem ipsum",
     body: "Lorem ipsum ipsum",
-    image: "assets/images/mapbiomas.png",
+    image: "assets/images/slider-mapbiomas.png",
     link: "http://mapbiomas.org"
   },
   {
     title: "SEEG",
     caption: "Lorem ipsum",
     body: "Lorem ipsum ipsum",
-    image: "assets/images/seeg.png",
+    image: "assets/images/slider-seeg.png",
     link: "http://plataforma.seeg.eco.org"
   }
 
