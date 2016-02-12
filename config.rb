@@ -9,9 +9,9 @@ after_configuration do
     sprockets.append_path File.dirname(::React::Source.bundled_path_for('react.js'))
 end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 configure :build do
   activate :minify_css
