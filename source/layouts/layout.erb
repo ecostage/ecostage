@@ -18,11 +18,11 @@
   </head>
   <body class="<%= page_classes %>">
 
+    <%= partial 'partials/header'%>
+
     <% if current_page.data.intro? %>
       <%= partial 'partials/intro'%>
     <% end %>
-
-    <%= partial 'partials/header'%>
     
     <%= yield %>
     

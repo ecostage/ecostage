@@ -1,3 +1,35 @@
 .header {
-  background-color: $header-bg-color;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 9999;
+	@include transition;
+
+  &.affix {
+  	background-color: $header-bg-color;
+  	position: fixed;
+
+  	&-top {
+			background-color: transparent;
+
+			.nav-link {
+				color: $nav-link-color-top;
+
+				&:hover, &:active, &:focus {
+					color: $nav-link-color-top-hover;
+				}
+			}
+  	}
+
+		.nav-item-logo {
+			visibility: visible;
+			opacity: 1;
+		}
+  }
+
+	.nav-item-logo {
+		visibility: hidden;
+		opacity: 0;
+		@include transition;
+	}
 }
