@@ -7,6 +7,10 @@
 		margin-top: $large-spacing;
 		margin-bottom: 0px;
 		padding: 0;
+
+		@include media($tablet) {
+			text-align: center;
+		}
 	}
 	
 	&__item {

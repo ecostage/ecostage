@@ -37,6 +37,10 @@
     border-radius: $header-logo-size;
     border: rem(4px) solid $dark-gray;
 
+    @include media($tablet) {
+      display: none;
+    }
+
     .nav-logo {
       margin-top: -5px;
     }

@@ -1,0 +1,52 @@
+.owl-projects {
+	margin-top: $large-spacing;
+
+	.item {
+		width: 100%;
+			
+		img{
+			margin: 0 auto;
+			display: block;
+			height: auto;
+			max-width: 100%;
+		}
+	}
+
+	.owl-controls {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 50%;
+
+		.owl-prev, .owl-next {
+			position: absolute;
+			bottom: 0px;
+			display: inline-block;
+			text-indent: -9999px;
+			color: white;
+			background-color: $light-gray;
+			padding: $small-spacing ($small-spacing + rem(10px));
+
+			&:before {
+				position: absolute;
+				left: 0px;
+				width: 100%;
+				text-align: center;
+				text-indent: initial;
+				@extend .fa;
+				font-size: $base-font-size;
+			}
+		}
+
+		.owl-prev	{
+			left: -$small-spacing;
+
+			&:before {content: "\f104";}
+		}
+		.owl-next {
+			right: -$small-spacing;
+
+			&:before {content: "\f105";}
+		}
+	}
+}
