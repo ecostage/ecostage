@@ -16,11 +16,24 @@
 
   &__image {
     width: 100%;
+
+    &-table {
+      @include media($tablet) { display: none;}
+    }
+    &-mobile {
+     display: none;
+     @include media($tablet) { display: block;} 
+    }
   }
 
   &__text {
-    padding-top: 20px; 
+    padding-top: $base-spacing; 
     font-family: $heading-font-family;
     font-size: $base-font-size;
+
+    &-span {
+      display: block;
+      @include media($tablet) { display: inline;}
+    }
   }
 }

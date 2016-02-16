@@ -3,6 +3,11 @@
 
 	.item {
 		width: 100%;
+
+		&-text {
+			max-width: 540px;
+			margin: 0 auto;
+		}
 			
 		img{
 			margin: 10px auto;
@@ -24,18 +29,19 @@
 			bottom: 0px;
 			display: inline-block;
 			text-indent: -9999px;
-			color: white;
-			background-color: $light-gray;
+			color: $light-gray;
+			background-color: white;
 			padding: $small-spacing ($small-spacing + rem(10px));
 
 			&:before {
 				position: absolute;
+				top: 8%;
 				left: 0px;
 				width: 100%;
 				text-align: center;
 				text-indent: initial;
 				@extend .fa;
-				font-size: $base-font-size;
+				font-size: $large-font-size;
 			}
 		}
 

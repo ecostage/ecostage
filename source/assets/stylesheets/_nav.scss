@@ -16,11 +16,15 @@
   &-item-left {
     float: left;
     padding-right: 12%;
+
+    @include media($mobile) { padding-right: 7%; }
   }
 
   &-item-right {
     float: right;
     padding-left: 12%;
+
+    @include media($mobile) { padding-left: 7%; }
   }
 
   &-item-logo {

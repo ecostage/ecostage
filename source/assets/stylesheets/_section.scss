@@ -8,3 +8,9 @@
     margin-bottom: $small-spacing;
   }
 }
+
+.wrapper {
+	&-inner {
+		min-height: 65%;
+  }
+}
