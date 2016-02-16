@@ -5,6 +5,7 @@
   .wrapper { 
     @include outer-container;
   }
+
   .brand-footer {
     @include span-columns(2);
 
@@ -12,8 +13,8 @@
       max-width: 100%;
       text-align: center; 
     }
-
   }
+
   .footer-nav {
     @include span-columns(6);
     text-align: center;
@@ -22,6 +23,7 @@
       padding: $micro-spacing;
     }
   }
+  
   .social {
     @include span-columns(2);
     text-align: center;
