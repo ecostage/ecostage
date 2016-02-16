@@ -1,59 +1,59 @@
 .owl-projects {
-	margin-top: $large-spacing;
+  margin-top: $large-spacing;
 
-	.item {
-		width: 100%;
+  .item {
+    width: 100%;
 
-		&-text {
-			max-width: 540px;
-			margin: 0 auto;
-		}
-			
-		img{
-			margin: 10px auto;
-			display: block;
-			height: auto;
-			max-width: 100%;
-			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
-		}
-	}
+    &-text {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+      
+    img{
+      margin: 10px auto;
+      display: block;
+      height: auto;
+      max-width: 100%;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    }
+  }
 
-	.owl-controls {
-		position: absolute;
-		top: 0px;
-		width: 100%;
-		height: 50%;
+  .owl-controls {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 50%;
 
-		.owl-prev, .owl-next {
-			position: absolute;
-			bottom: 0px;
-			display: inline-block;
-			text-indent: -9999px;
-			color: $light-gray;
-			background-color: white;
-			padding: $small-spacing ($small-spacing + rem(10px));
+    .owl-prev, .owl-next {
+      position: absolute;
+      bottom: 0px;
+      display: inline-block;
+      text-indent: -9999px;
+      color: $light-gray;
+      background-color: white;
+      padding: $small-spacing ($small-spacing + rem(10px));
 
-			&:before {
-				position: absolute;
-				top: 8%;
-				left: 0px;
-				width: 100%;
-				text-align: center;
-				text-indent: initial;
-				@extend .fa;
-				font-size: $large-font-size;
-			}
-		}
+      &:before {
+        position: absolute;
+        top: 8%;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        text-indent: initial;
+        @extend .fa;
+        font-size: $large-font-size;
+      }
+    }
 
-		.owl-prev	{
-			left: -$small-spacing;
+    .owl-prev {
+      left: -$small-spacing;
 
-			&:before {content: "\f104";}
-		}
-		.owl-next {
-			right: -$small-spacing;
+      &:before {content: "\f104";}
+    }
+    .owl-next {
+      right: -$small-spacing;
 
-			&:before {content: "\f105";}
-		}
-	}
+      &:before {content: "\f105";}
+    }
+  }
 }

@@ -1,6 +1,6 @@
 // slider - últimos projetos desenvolvidos
 $(document).ready(function() {
-  $("#owl-projects").owlCarousel({
+  $("#js-our-projects").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
