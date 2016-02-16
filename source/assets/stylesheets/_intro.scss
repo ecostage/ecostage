@@ -8,10 +8,10 @@
   &__section {
     position: absolute;
     left:50%;
-    width: 60%;
-    margin-left:-30%;
+    width: 70%;
+    margin-left:-35%;
     text-align: center;
-    top: 10%;
+    top: 13%;
   }
 
   &__image {
@@ -21,6 +21,6 @@
   &__text {
     padding-top: 20px; 
     font-family: $heading-font-family;
-    font-size: rem(26px);
+    font-size: $base-font-size;
   }
 }

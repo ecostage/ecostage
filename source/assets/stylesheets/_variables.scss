@@ -12,6 +12,7 @@ $nav-link-color: $light-gray;
 $active-nav-link-color: #fff;
 
 //Spacing
+$xlarge-spacing: rem(80px);
 $large-spacing: rem(48px);
 $base-spacing: rem(24px);
 $small-spacing: rem(16px);
@@ -19,7 +20,7 @@ $micro-spacing: rem(8px);
 $container-inner-spacing: $small-spacing;
 
 //Sizing
-$header-logo-size: rem(110px);
+$header-logo-size: rem(70px);
 
 //Typography
 $body-font-family: $font-open-sans, sans-serif;
@@ -32,5 +33,5 @@ $base-font-size: rem(24px);
 $small-font-size: rem(16px);
 $micro-font-size: rem(8px);
 
-$nav-font-size: rem(22px);
+$nav-font-size: $small-font-size;
 $heading-font-size: rem(36px);

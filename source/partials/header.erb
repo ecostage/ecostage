@@ -1,12 +1,18 @@
-<header class="header" data-spy="affix" data-offset-top="60">
+<header
+  <% if current_page.data.inner? %>
+    class="header affix"
+  <% else %>
+    class="header" data-spy="affix" data-offset-top="10"
+  <% end %>
+>
   
   <nav class="nav header-nav">
     <ul class="nav-list">
       <li class="nav-item nav-item-left">
-        <a class="nav-link" href="#about">sobre</a>
+        <a class="nav-link" href="about.html">sobre</a>
       </li>
       <li class="nav-item nav-item-left">
-        <a class="nav-link" href="#work">trabalhos</a>
+        <a class="nav-link" href="work.html">projetos</a>
       </li>
       <li class="nav-item nav-item-logo">
         <a href="/" class="nav-link header-logo">
@@ -14,12 +20,15 @@
         </a>
       </li>
       <li class="nav-item nav-item-right">
-        <a class="nav-link" href="#contact">contato</a>
+        <a class="nav-link" href="contact.html">contato</a>
       </li>
       <li class="nav-item nav-item-right">
-        <a class="nav-link" href="#team">equipe</a>
+        <a class="nav-link" href="team.html">equipe</a>
       </li>
     </ul>
   </nav>
 
 </header>
+<% if current_page.data.inner? %>
+  <div class="inner-header"></div>
+<% end %>
