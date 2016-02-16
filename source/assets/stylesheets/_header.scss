@@ -1,0 +1,49 @@
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  @include transition(all 0.2s ease-out);
+
+  &.affix {
+    background-color: $header-bg-color;
+    position: fixed;
+    @include transition(all 0.2s ease-out);
+
+    .nav-item {
+      padding-top: $small-spacing; 
+      padding-bottom: $small-spacing; 
+    }
+
+    &-top {
+      background-color: transparent;
+      @include transition(all 0.2s ease-out);
+
+      .nav-link {
+        color: $nav-link-color-top;
+
+        &:hover, &:active, &:focus {
+          color: $nav-link-color-top-hover;
+        }
+      }
+    }
+
+    .nav-item-logo {
+      visibility: visible;
+      opacity: 1;
+      @include transition(all 0.2s ease-out);
+      top: 0;
+    }
+  }
+
+  .nav-item-logo {
+    visibility: hidden;
+    opacity: 0;
+    top: -$xlarge-spacing;
+    @include transition(all 0.2s ease-out);
+  }
+}
+
+.inner-header {
+  padding-top: $large-spacing;
+}

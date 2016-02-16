@@ -1,0 +1,37 @@
+//Colors
+$light-gray: #eeeeee;
+$gray: #888;
+$bg-gray: #f6f6f6;
+$dark-gray: #3f3f3f;
+$green: #99cc29;
+
+$header-bg-color: $dark-gray;
+$nav-link-color-top: $dark-gray;
+$nav-link-color-top-hover: $green;
+$nav-link-color: $light-gray;
+$active-nav-link-color: #fff;
+
+//Spacing
+$xlarge-spacing: rem(80px);
+$large-spacing: rem(48px);
+$base-spacing: rem(24px);
+$small-spacing: rem(16px);
+$micro-spacing: rem(8px);
+$container-inner-spacing: $small-spacing;
+
+//Sizing
+$header-logo-size: rem(70px);
+
+//Typography
+$body-font-family: $font-open-sans, sans-serif;
+$heading-font-family: $font-text-me-one, sans-serif;
+$nav-font-family: $font-text-me-one, sans-serif;
+
+$base-font-size: rem(16px);
+$large-font-size: rem(48px);
+$base-font-size: rem(24px);
+$small-font-size: rem(16px);
+$micro-font-size: rem(8px);
+
+$nav-font-size: $small-font-size;
+$heading-font-size: rem(36px);

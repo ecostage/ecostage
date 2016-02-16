@@ -1,0 +1,28 @@
+.work-carousel {
+  position: relative;
+  height: 400px;
+
+  .carousel-item {
+    position: absolute;
+  }  
+}
+
+.carousel {
+  &-enter {
+    opacity: 0.01;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+
+  &-leave {
+    opacity: 1;
+  }
+
+  &-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+}

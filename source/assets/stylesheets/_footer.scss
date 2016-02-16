@@ -1,0 +1,53 @@
+.footer {
+  background-color: $header-bg-color;
+  padding: $base-spacing 0;
+  
+  .wrapper { 
+    @include outer-container;
+  }
+
+  .brand-footer {
+    @include span-columns(2);
+
+    .footer-logo {
+      max-width: 100%;
+      text-align: center; 
+    }
+  }
+
+  .footer-nav {
+    @include span-columns(6);
+    text-align: center;
+
+    .nav-item {
+      padding: $micro-spacing;
+    }
+  }
+  
+  .social {
+    @include span-columns(2);
+    text-align: center;
+
+    &-link {
+      color: white;
+      text-decoration: none;
+      padding: $micro-spacing;
+      font-size: $base-font-size;
+
+      @include media($tablet) {
+        font-size: $base-font-size;       
+      }
+    }
+
+    @include media($tablet) {
+      width: 100%;
+      margin: 0px;
+    }
+  }
+
+  .brand-footer, .footer-nav {
+    @include media($tablet) {
+      display: none;
+    }
+  }
+}
