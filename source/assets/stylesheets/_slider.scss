@@ -2,11 +2,33 @@
   margin-top: $large-spacing;
 
   .item {
-    width: 100%;
+    @include outer-container;
+    padding: 0 $large-spacing;
+
+    @include media($tablet) {
+      padding: 0 $base-spacing;
+    }
+
+    &-imagem {
+      @include span-columns(6);
+      
+      @include media($tablet) {
+        width: 100%;
+      }
+    }
 
     &-text {
-      max-width: 540px;
       margin: 0 auto;
+      @include span-columns(4);
+
+      @include media($tablet) {
+        width: 100%;
+        padding: 0 $base-spacing;
+      }
+
+      @include media($mobile) {
+        padding: 0 $micro-spacing;
+      }
     }
       
     img{
@@ -14,7 +36,7 @@
       display: block;
       height: auto;
       max-width: 100%;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+      border: 1px solid $light-gray;
     }
   }
 
@@ -30,8 +52,8 @@
       display: inline-block;
       text-indent: -9999px;
       color: $light-gray;
-      background-color: white;
-      padding: $small-spacing ($small-spacing + rem(10px));
+      background-color: transparent;
+      padding: $small-spacing;
 
       &:before {
         position: absolute;
@@ -50,6 +72,7 @@
 
       &:before {content: "\f104";}
     }
+    
     .owl-next {
       right: -$small-spacing;
 

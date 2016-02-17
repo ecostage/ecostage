@@ -18,11 +18,17 @@
     width: 100%;
 
     &-table {
-      @include media($tablet) { display: none;}
+      @include media($tablet) { 
+        display: none;
+      }
     }
     &-mobile {
-     display: none;
-     @include media($tablet) { display: block;} 
+      display: none;
+
+      @include media($tablet) { 
+        display: block;
+        height: rem(200px);
+      }
     }
   }
 
@@ -33,7 +39,15 @@
 
     &-span {
       display: block;
-      @include media($tablet) { display: inline;}
+
+      @include media($tablet) { 
+        display: inline;
+        font-size: $small-font-size;
+      }
+
+      @include media($mobile) { 
+        display: block;
+      } 
     }
   }
 }
