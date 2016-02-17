@@ -26,6 +26,7 @@
   
   .social {
     text-align: center;
+    margin-top: $micro-spacing;
     @include span-columns(2);
 
     &-link {
