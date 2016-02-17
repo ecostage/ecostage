@@ -1,0 +1,27 @@
+.team-list {
+	@include outer-container;
+}
+
+.team-member {
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	margin: $base-spacing 0;
+	
+	&__imagem {
+		background-color: white;
+		box-shadow: 0px 0px 0px 4px rgba($light-gray, 0.75);
+		width: rem(180px);
+		height: rem(180px);
+		border-radius: 100%;
+	}
+
+	&__caption {
+		text-align: center;
+
+		strong, small {
+			display: block;
+		}
+		small { color: $light-gray;}
+	}
+}

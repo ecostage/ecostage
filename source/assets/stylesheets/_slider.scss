@@ -15,6 +15,14 @@
       @include media($tablet) {
         width: 100%;
       }
+
+      img{
+        margin: 0 auto;
+        display: block;
+        height: auto;
+        max-width: 100%;
+        border: 1px solid $light-gray;
+      }
     }
 
     &-text {
@@ -29,14 +37,22 @@
       @include media($mobile) {
         padding: 0 $micro-spacing;
       }
-    }
-      
-    img{
-      margin: 10px auto;
-      display: block;
-      height: auto;
-      max-width: 100%;
-      border: 1px solid $light-gray;
+
+      img{
+        width: rem(120px);
+        margin: 10px auto;
+        height: auto;
+      }
+
+      .link-text {
+        color: $dark-gray;
+        text-decoration: underline;
+
+        &:hover, &:active, &:focus {
+          color: $green;
+          text-decoration: none;
+        }
+      }
     }
   }
 
