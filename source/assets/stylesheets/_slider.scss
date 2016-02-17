@@ -44,16 +44,6 @@
         margin: 10px auto;
         height: auto;
       }
-
-      .link-text {
-        color: $dark-gray;
-        text-decoration: underline;
-
-        &:hover, &:active, &:focus {
-          color: $green;
-          text-decoration: none;
-        }
-      }
     }
   }
 
