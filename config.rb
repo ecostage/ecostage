@@ -1,5 +1,4 @@
 activate :automatic_image_sizes
-activate :react
 
 configure :development do
   activate :livereload

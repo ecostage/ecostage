@@ -4,56 +4,64 @@ intro: true
 ---
 
 <div class="customer">
-<section class="section">
+  <section class="section">
 
-  <h1 class="section-title">
-    nossos clientes
-  </h1>
-  <ul class="customer__list">
-    <li class="customer__item">
-      <%= image_tag "fgv.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "imazon.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "wwf.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "greenpeace.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "oc.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "seeg.png", class: "customer__logo" %>
-    </li>
-    <li class="customer__item">
-      <%= image_tag "iema.png", class: "customer__logo" %>
-    </li>
-  </ul>
-</section>
+    <h1 class="section-title">
+      clientes
+    </h1>
+    <ul class="customer__list">
+      <li class="customer__item">
+        <%= image_tag "fgv.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "imazon.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "wwf.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "greenpeace.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "oc.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "seeg.png", class: "customer__logo" %>
+      </li>
+      <li class="customer__item">
+        <%= image_tag "iema.png", class: "customer__logo" %>
+      </li>
+    </ul>
+
+  </section>
 </div>
 
 <section class="section work">
   <h1 class="section-title">
-    últimos projetos desenvolvidos
+    projetos
   </h1>
 
-  <div id="js-our-projects" class="owl-carousel owl-projects">
-    
+  <div id="js-our-projects" class="owl-carousel owl-projects">    
     <div class="item">
-      <%= image_tag "slider-mapbiomas.png", class: "owl-imgslider" %>
+      <div class="item-imagem">
+        <%= image_tag "slider-mapbiomas.png", class: "owl-imgslider" %>
+      </div>
       <div class="item-text">
-        <h2>Mapbiomas</h2>
-        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+        <h4>Mapbiomas</h4>
+        <p>O MapBiomas é uma iniciativa do SEEG/OC e é produzido por uma rede colaborativa de co-criadores formado por ONGs, universidades e empresas organizados por biomas e temas transversais.</p>
+        <p><a class="link-text" href="http://mapbiomas.org/" target="_blank">http://mapbiomas.org/</a></p>
+        <%= image_tag "seeg.png" %>
       </div>
     </div>
     <div class="item">
-      <%= image_tag "slider-seeg.png", class: "owl-imgslider" %>
+      <div class="item-imagem">
+        <%= image_tag "slider-seeg.png", class: "owl-imgslider" %>
+      </div>
       <div class="item-text">
-        <h2>Seeg</h2>
-        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+        <h4>Seeg Monitor Elétrico</h4>
+        <p>É uma ferramenta de informação qualificada e com atualização diária sobre a composição da matriz elétrica brasileira e suas emissões de gases de efeito estufa.</p>
+        <p><a class="link-text" href="http://monitoreletrico.seeg.eco.br/" target="_blank">http://monitoreletrico.seeg.eco.br/</a></p>
+        <%= image_tag "seeg.png" %>
       </div>
     </div>
   </div>
