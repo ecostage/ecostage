@@ -1,42 +1,42 @@
 .project-list {
-	@include outer-container;
+  @include outer-container;
 }
 
 .project-item {
-	margin-top: $large-spacing;
-	padding-bottom: $large-spacing; 
-	@include clearfix;
+  margin-top: $large-spacing;
+  padding-bottom: $large-spacing; 
+  @include clearfix;
 
-	&__logo-work {
-	  width: 260px;
-	  height: 90px;
-	}
+  &__logo-work {
+    width: 260px;
+    height: 90px;
+  }
 
-	&__printscreen {
-		width: 50%;
+  &__printscreen {
+    width: 50%;
 
-		&--left { float: left; text-align: left;}
-		&--right { float: right; text-align: right;}
-	}
+    &--left { float: left; text-align: left;}
+    &--right { float: right; text-align: right;}
+  }
 
-	&__image {
-		max-width: 100%;
-		height: auto;
-		box-shadow: 0px 0px 7px 0px rgba($dark-gray, 0.04);
-	}
+  &__image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 7px 0px rgba($dark-gray, 0.04);
+  }
 
-	&__caption {
-		width: 50%;
+  &__caption {
+    width: 50%;
 
-		&__description {
-			
-		}
-		
-		&__link {
-			
-		}
+    &__description {
+      
+    }
+    
+    &__link {
+      
+    }
 
-		&--left { float: left;}
-		&--right { float: right;}
-	}
+    &--left { float: left;}
+    &--right { float: right;}
+  }
 }
