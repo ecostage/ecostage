@@ -13,17 +13,6 @@
     border: 1px solid $light-gray;
   }
   &__button {
-    background-color: $dark-gray;
-    color: $light-gray;
-    padding: $micro-spacing $small-spacing;
-    border: 0;
-    border-radius: rem(6px);
-    float: right;
-    @include transition(all 0.2s ease-out);
-
-    &:hover, &:active, &:focus {
-      background-color: $light-gray;
-      color: $dark-gray;
-    }
+    @extend .link-button;
   }
 }
