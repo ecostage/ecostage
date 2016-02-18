@@ -1,29 +1,29 @@
 .contact-form {
-	width: 600px;
-	min-width: 320px;
-	margin: $large-spacing auto 0;
+  width: 600px;
+  min-width: 320px;
+  margin: $large-spacing auto 0;
 
-	&__item {
-		margin-bottom: $small-spacing;
-	}
-	&__input {
-		width: 100%;
-		padding: $micro-spacing;
-		border-radius: rem(6px);
-		border: 1px solid $light-gray;
-	}
-	&__button {
-		background-color: $dark-gray;
-		color: $light-gray;
-		padding: $micro-spacing $small-spacing;
-		border: 0;
-		border-radius: rem(6px);
-		float: right;
-		@include transition(all 0.2s ease-out);
+  &__item {
+    margin-bottom: $small-spacing;
+  }
+  &__input {
+    width: 100%;
+    padding: $micro-spacing;
+    border-radius: rem(6px);
+    border: 1px solid $light-gray;
+  }
+  &__button {
+    background-color: $dark-gray;
+    color: $light-gray;
+    padding: $micro-spacing $small-spacing;
+    border: 0;
+    border-radius: rem(6px);
+    float: right;
+    @include transition(all 0.2s ease-out);
 
-		&:hover, &:active, &:focus {
-			background-color: $light-gray;
-			color: $dark-gray;
-		}
-	}
+    &:hover, &:active, &:focus {
+      background-color: $light-gray;
+      color: $dark-gray;
+    }
+  }
 }
