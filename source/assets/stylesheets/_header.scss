@@ -6,6 +6,14 @@
   background-color: transparent;
   @include transition(all 0.2s ease-out);
 
+  &--intro {
+    .nav-link {
+      &, &:hover, &:active, &:focus {
+        color: $dark-gray;
+      }
+    }
+  }
+
   .nav-item-logo {
     display: none;
   }
