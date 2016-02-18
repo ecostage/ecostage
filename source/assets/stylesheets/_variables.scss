@@ -4,6 +4,8 @@ $dark-gray: #3f3f3f;
 $light-gray: #eeeeee;
 $ligther-gray: #f8f8f8;
 $green: #99cc29;
+$orange: #e29a1b;
+$light-orange: lighten($orange, 10%);;
 $dark-green: darken($green, 15%);
 $light-gray-bg: $ligther-gray;
 $dark-gray-bg: $dark-gray;

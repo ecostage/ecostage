@@ -1,7 +1,12 @@
 .contact-form {
   width: 600px;
-  min-width: 320px;
   margin: $large-spacing auto 0;
+
+  @include media($tablet) {
+    width: auto;
+    margin: 0px;
+    padding: 0 
+  }
 
   &__item {
     margin-bottom: $small-spacing;

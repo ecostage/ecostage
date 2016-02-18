@@ -28,6 +28,7 @@
     @include media($tablet) { 
       width: 100%;
       padding: 0 $base-spacing $base-spacing;
+      position: relative;
     }
 
     &--left { 
@@ -58,16 +59,18 @@
 
     @include media($tablet) { 
       width: 100%;
-      padding: $base-spacing; 
+      padding: 0 $base-spacing $base-spacing;
     }
 
     &--left { 
       float: left; 
       text-align: right;
+      @include media($tablet) { text-align: left;}
     }
     &--right { 
       float: right;
       text-align: left;
+      @include media($tablet) { text-align: left;}
     }
   }
 }

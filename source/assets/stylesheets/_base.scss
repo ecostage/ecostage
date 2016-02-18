@@ -60,7 +60,7 @@ h6 {
 
 .link-button {
   color: white;
-  background-color: $dark-green;
+  background-color: $orange;
   font-size: $small-font-size;
   padding: $micro-spacing $small-spacing;
   text-decoration: none;
@@ -69,6 +69,6 @@ h6 {
 
   &:hover, &:active, &:focus {
     color: white;
-    background-color: $green;
+    background-color: $light-orange;
   }
 }
