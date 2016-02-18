@@ -1,10 +1,12 @@
 //Colors
+$gray: #7f7f7f;
+$dark-gray: #3f3f3f;
 $light-gray: #eeeeee;
-$gray: #888;
-$bg-gray: #f6f6f6;
-$dark-gray-bg: #3f3f3f;
-$dark-gray: #303030;
+$ligther-gray: #f8f8f8;
 $green: #99cc29;
+$dark-green: darken($green, 15%);
+$light-gray-bg: $ligther-gray;
+$dark-gray-bg: $dark-gray;
 
 $header-bg-color: $dark-gray-bg;
 $nav-link-color-top: $dark-gray-bg;
@@ -25,14 +27,21 @@ $header-logo-size: rem(70px);
 
 //Typography
 $body-font-family: $font-open-sans, sans-serif;
-$heading-font-family: $font-text-me-one, sans-serif;
-$nav-font-family: $font-text-me-one, sans-serif;
+$heading-font-family: $font-lato, sans-serif;
+$nav-font-family: $font-lato, sans-serif;
 
 $base-font-size: rem(16px);
 $large-font-size: rem(48px);
-$medium-font-size: rem(24px);
-$small-font-size: rem(16px);
+$medium-font-size: rem(22px);
+$small-font-size: rem(12px);
 $micro-font-size: rem(8px);
 
-$nav-font-size: $small-font-size;
-$heading-font-size: rem(36px);
+$weight-light: 300;
+$weight-regular: 400;
+$weight-bold: 700;
+
+$nav-font-size: $base-font-size;
+$heading-font-size: rem(40px);
+$heading-weight: $weight-light;
+
+$text-line-height: ($base-font-size + rem(10px));

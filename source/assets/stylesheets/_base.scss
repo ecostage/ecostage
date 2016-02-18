@@ -15,6 +15,11 @@ ul {
   list-style: none;
 }
 
+p {
+  color: $gray;
+  line-height: $text-line-height;
+}
+
 h1,
 h2,
 h3,
@@ -24,6 +29,8 @@ h6 {
   font-family: $heading-font-family;
   margin: 0;
   padding: 0;
+  color: $dark-gray;
+  font-weight: normal;
 }
 
 h1,
@@ -48,5 +55,20 @@ h6 {
   &:hover, &:active, &:focus {
     color: $green;
     text-decoration: none;
+  }
+}
+
+.link-button {
+  color: white;
+  background-color: $dark-green;
+  font-size: $small-font-size;
+  padding: $micro-spacing $small-spacing;
+  text-decoration: none;
+  border-radius: 2px;
+
+
+  &:hover, &:active, &:focus {
+    color: white;
+    background-color: $green;
   }
 }

@@ -10,40 +10,33 @@
 
   &-item {
     display: inline-block;
-    padding: $base-spacing 0;
+    padding: $small-spacing 0;
   }
 
   &-item-left {
     float: left;
     padding-right: 12%;
 
-    @include media($mobile) { padding-right: 7%; }
+    @include media($mobile) { padding-right: 5%; }
   }
 
   &-item-right {
     float: right;
     padding-left: 12%;
 
-    @include media($mobile) { padding-left: 7%; }
+    @include media($mobile) { padding-left: 5%; }
   }
 
   &-item-logo {
     width: $header-logo-size;
     height: $header-logo-size;
     padding: $small-spacing;
-    background-color: #fff;
     position: absolute;
     left: 50%;
     margin-top: 0;
     margin-left: -($header-logo-size/2);
     margin-right: auto;
     margin-bottom: $small-spacing;
-    border-radius: $header-logo-size;
-    border: rem(4px) solid $dark-gray;
-
-    @include media($tablet) {
-      display: none;
-    }
 
     .nav-logo {
       margin-top: -5px;

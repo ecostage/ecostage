@@ -3,44 +3,37 @@
   top: 0px;
   width: 100%;
   z-index: 9999;
+  background-color: transparent;
   @include transition(all 0.2s ease-out);
 
+  .nav-item-logo {
+    display: none;
+  }
+
   &.affix {
+    position: absolute;
     background-color: $header-bg-color;
     position: fixed;
+    top: 0px;
+    height: 60px;
     @include transition(all 0.2s ease-out);
 
-    .nav-item {
-      padding-top: $small-spacing; 
-      padding-bottom: $small-spacing; 
+    .nav-item-logo {
+      display: block;
     }
 
     &-top {
-      background-color: transparent;
+      background-color: $header-bg-color;
+      position: fixed;
+      top: -100px;
+      height: 0px;
+      overflow: hidden;
       @include transition(all 0.2s ease-out);
 
-      .nav-link {
-        color: $nav-link-color-top;
-
-        &:hover, &:active, &:focus {
-          color: $nav-link-color-top-hover;
-        }
+      .nav-item-logo {
+        display: block;
       }
     }
-
-    .nav-item-logo {
-      visibility: visible;
-      opacity: 1;
-      @include transition(all 0.2s ease-out);
-      top: 0;
-    }
-  }
-
-  .nav-item-logo {
-    visibility: hidden;
-    opacity: 0;
-    top: -$xlarge-spacing;
-    @include transition(all 0.2s ease-out);
   }
 }
 

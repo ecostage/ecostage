@@ -1,3 +1,9 @@
+<header class="header">
+  <nav class="nav header-nav">
+    <%= partial 'partials/nav'%>
+  </nav>
+</header>
+
 <header
   <% if current_page.data.inner? %>
     class="header affix"
@@ -7,30 +13,7 @@
 >
   
   <nav class="nav header-nav">
-    <ul class="nav-list">
-      <li class="nav-item nav-item-left">
-        <a class="nav-link" href="about.html">sobre</a>
-      </li>
-      <li class="nav-item nav-item-left">
-        <a class="nav-link" href="work.html">projetos</a>
-      </li>
-      <!--<li class="nav-item nav-item-logo">
-        <a href="/" class="nav-link header-logo">
-          <%= image_tag "tree-logo.svg", class: "nav-logo" %>
-        </a>
-      </li>-->
-      <li class="nav-item nav-item-logo">
-        <a href="/" class="nav-link header-logo">
-          <%= image_tag "tree-logo.svg", class: "nav-logo" %>
-        </a>
-      </li>
-      <li class="nav-item nav-item-right">
-        <a class="nav-link" href="contact.html">contato</a>
-      </li>
-      <li class="nav-item nav-item-right">
-        <a class="nav-link" href="team.html">equipe</a>
-      </li>
-    </ul>
+    <%= partial 'partials/nav'%>
   </nav>
 
 </header>
