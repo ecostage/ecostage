@@ -1,0 +1,54 @@
+.project-list {
+  @include outer-container;
+}
+
+.project-item {
+  margin-top: $large-spacing;
+  padding-bottom: $large-spacing; 
+  @include clearfix;
+
+  &__logo-work {
+    width: 260px;
+    height: 90px;
+  }
+
+  &__printscreen {
+    width: 55%;
+    padding: 0 $base-spacing;
+
+    @include media($tablet) { 
+      width: 100%;
+      padding: 0 $base-spacing $base-spacing;
+    }
+
+    &--left { 
+      float: left; 
+      text-align: left;
+      @include media($tablet) { text-align: center;}
+    }
+    
+    &--right { 
+      float: right; 
+      text-align: right;
+      @include media($tablet) { text-align: center;}
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 7px 0px rgba($dark-gray, 0.04);
+  }
+
+  &__caption {
+    width: 45%;
+
+    @include media($tablet) { 
+      width: 100%;
+      padding: $base-spacing; 
+    }
+
+    &--left { float: left;}
+    &--right { float: right;}
+  }
+}

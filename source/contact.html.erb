@@ -10,13 +10,22 @@ inner: true
       Contato
     </h1>
 
-    <p>Texto</p>
-
     <form action="//formspree.io/contato@ecostage.com.br"
      method="POST">
-       <input type="text" name="name">
-       <input type="email" name="_replyto">
-       <input type="submit" value="Send">
+      <ul class="contact-form">
+        <li class="contact-form__item">
+          <input class="contact-form__input" type="text" name="name" placeholder="Digite seu nome">
+        </li>
+        <li class="contact-form__item">
+          <input class="contact-form__input" type="email" name="_replyto" placeholder="Digite seu e-mail">
+        </li>
+        <li class="contact-form__item">
+          <textarea class="contact-form__input" name="message" placeholder="Digite sua mensagem" id="" cols="30" rows="10"></textarea>
+        </li>
+        <li class="contact-form__item">
+          <input class="contact-form__button" type="submit" value="Enviar">
+        </li>
+      </ul>
     </form>
 
   </section>

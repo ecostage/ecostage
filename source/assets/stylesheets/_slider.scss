@@ -1,5 +1,5 @@
 .owl-projects {
-  margin-top: $large-spacing;
+  margin: $large-spacing 0;
 
   .item {
     @include outer-container;
@@ -15,6 +15,7 @@
       
       @include media($tablet) {
         width: 100%;
+        margin-bottom: $base-spacing;
       }
 
       img{
@@ -40,19 +41,8 @@
       }
 
       img{
-        width: rem(120px);
         margin: 10px auto;
         height: auto;
-      }
-
-      .link-text {
-        color: $dark-gray;
-        text-decoration: underline;
-
-        &:hover, &:active, &:focus {
-          color: $green;
-          text-decoration: none;
-        }
       }
     }
   }

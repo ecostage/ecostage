@@ -40,3 +40,13 @@ h5,
 h6 {
   font-size: $base-font-size;
 }
+
+.link-text {
+  color: $dark-gray;
+  text-decoration: underline;
+
+  &:hover, &:active, &:focus {
+    color: $green;
+    text-decoration: none;
+  }
+}

@@ -2,11 +2,12 @@
 $light-gray: #eeeeee;
 $gray: #888;
 $bg-gray: #f6f6f6;
-$dark-gray: #3f3f3f;
+$dark-gray-bg: #3f3f3f;
+$dark-gray: #303030;
 $green: #99cc29;
 
-$header-bg-color: $dark-gray;
-$nav-link-color-top: $dark-gray;
+$header-bg-color: $dark-gray-bg;
+$nav-link-color-top: $dark-gray-bg;
 $nav-link-color-top-hover: $green;
 $nav-link-color: $light-gray;
 $active-nav-link-color: #fff;
