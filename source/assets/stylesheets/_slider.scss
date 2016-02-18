@@ -1,5 +1,5 @@
 .owl-projects {
-  margin-top: $large-spacing;
+  margin: $large-spacing 0;
 
   .item {
     @include outer-container;
@@ -40,7 +40,6 @@
       }
 
       img{
-        width: rem(120px);
         margin: 10px auto;
         height: auto;
       }
