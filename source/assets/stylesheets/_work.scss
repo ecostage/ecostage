@@ -13,10 +13,25 @@
   }
 
   &__printscreen {
-    width: 50%;
+    width: 55%;
+    padding: 0 $base-spacing;
 
-    &--left { float: left; text-align: left;}
-    &--right { float: right; text-align: right;}
+    @include media($tablet) { 
+      width: 100%;
+      padding: 0 $base-spacing $base-spacing;
+    }
+
+    &--left { 
+      float: left; 
+      text-align: left;
+      @include media($tablet) { text-align: center;}
+    }
+    
+    &--right { 
+      float: right; 
+      text-align: right;
+      @include media($tablet) { text-align: center;}
+    }
   }
 
   &__image {
@@ -26,14 +41,11 @@
   }
 
   &__caption {
-    width: 50%;
+    width: 45%;
 
-    &__description {
-      
-    }
-    
-    &__link {
-      
+    @include media($tablet) { 
+      width: 100%;
+      padding: $base-spacing; 
     }
 
     &--left { float: left;}
