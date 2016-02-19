@@ -22,10 +22,10 @@
   &__printscreen {
     width: 60%;
     padding: 0 $base-spacing;
-    bottom:-10px;
+    bottom:-2px;
     position: absolute;
     height: rem(400px);
-    background-position: bottom;
+    background-position: top;
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -59,7 +59,7 @@
   &__caption {
     width: 40%;
     margin: $base-spacing 0;
-    padding: $base-spacing; 
+    padding: 0 $large-spacing; 
 
     @include media($tablet) { 
       width: 100%;
@@ -79,35 +79,35 @@
 
 .printscreen {
   &__seeg {
-    background: url("work-seeg.png") no-repeat;
-    @include image-2x("work-seeg2x.png", 100px, 25px);
+    background: url("../images/work-seeg.png") no-repeat;
+    @include image-2x("../images/work-seeg2x.png", 100%, auto);
   }
   &__mapbiomas {
-    background: url("work-mapbiomas.png") no-repeat;
-    @include image-2x("work-mapbiomas2x.png", 100px, 25px);
+    background: url("../images/work-mapbiomas.png") no-repeat;
+    @include image-2x("../images/work-mapbiomas2x.png", 100%, auto);
   }
   &__seegeletrico {
-    background: url("work-seegeletrico.png") no-repeat;
-    @include image-2x("work-seegeletrico2x.png", 100px, 25px);
+    background: url("../images/work-seegeletrico.png") no-repeat;
+    @include image-2x("../images/work-seegeletrico2x.png", 100%, auto);
   }
   &__ips {
-    background: url("work-ips.png") no-repeat;
-    @include image-2x("work-ips2x.png", 100px, 25px);
+    background: url("../images/work-ips.png") no-repeat;
+    @include image-2x("../images/work-ips2x.png", 100%, auto);
   }
   &__mundoise {
-    background: url("work-mundoise.png") no-repeat;
-    @include image-2x("work-mundoise2x.png", 100px, 25px);
+    background: url("../images/work-mundoise.png") no-repeat;
+    @include image-2x("../images/work-mundoise2x.png", 100%, auto);
   }
   &__simulador {
-    background: url("work-simulador.png") no-repeat;
-    @include image-2x("work-simulador2x.png", 100px, 25px);
+    background: url("../images/work-simulador.png") no-repeat;
+    @include image-2x("../images/work-simulador2x.png", 100%, auto);
   }
   &__plataformadoar {
-    background: url("work-plataformadoar.png") no-repeat;
-    @include image-2x("work-plataformadoar2x.png", 100px, 25px);
+    background: url("../images/work-plataformadoar.png") no-repeat;
+    @include image-2x("../images/work-plataformadoar2x.png", 100%, auto);
   }
   &__oc {
-    background: url("work-oc.png") no-repeat;
-    @include image-2x("work-oc2x.png", 100px, 25px);
+    background: url("../images/work-oc.png") no-repeat;
+    @include image-2x("../images/work-oc2x.png", 100%, auto);
   }
 }
