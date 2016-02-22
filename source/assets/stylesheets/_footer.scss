@@ -21,6 +21,11 @@
 
     .nav-item {
       padding: $micro-spacing;
+      float: none;
+
+      &.nav-item-logo {
+        display: none;
+      }
     }
   }
   

@@ -1,35 +1,52 @@
+.section-work {
+  margin-bottom: 0px;
+}
+
 .project-list {
-  @include outer-container;
+  @include outer-container; 
 }
 
 .project-item {
-  margin-top: $large-spacing;
-  padding-bottom: $large-spacing; 
+  margin-top: 0;
+  padding-bottom: 0; 
   @include clearfix;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
 
   &__logo-work {
-    width: 260px;
-    height: 90px;
+    width: auto;
+    height: auto;
   }
 
   &__printscreen {
-    width: 55%;
+    width: 60%;
     padding: 0 $base-spacing;
+    bottom:-2px;
+    position: absolute;
+    height: rem(400px);
+    background-position: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 
     @include media($tablet) { 
       width: 100%;
       padding: 0 $base-spacing $base-spacing;
+      position: relative;
+      background-position: center;
     }
 
     &--left { 
       float: left; 
-      text-align: left;
+      text-align: right;
+      left: 0px;
       @include media($tablet) { text-align: center;}
     }
     
     &--right { 
       float: right; 
-      text-align: right;
+      text-align: left;
+      right: 0px;
       @include media($tablet) { text-align: center;}
     }
   }
@@ -41,14 +58,57 @@
   }
 
   &__caption {
-    width: 45%;
+    width: 40%;
+    margin: $base-spacing 0;
+    padding: 0 $large-spacing; 
 
     @include media($tablet) { 
       width: 100%;
-      padding: $base-spacing; 
+      padding: 0 $base-spacing $base-spacing;
     }
 
-    &--left { float: left;}
-    &--right { float: right;}
+    &--left { 
+      float: left; 
+      @include media($tablet) { text-align: left;}
+    }
+    &--right { 
+      float: right;
+      @include media($tablet) { text-align: left;}
+    }
+  }
+}
+
+.printscreen {
+  &__seeg {
+    background-image: url("../images/work-seeg.png");
+    @include image-2x("../images/work-seeg2x.png", 100%, auto);
+  }
+  &__mapbiomas {
+    background-image: url("../images/work-mapbiomas.png");
+    @include image-2x("../images/work-mapbiomas2x.png", 100%, auto);
+  }
+  &__seegeletrico {
+    background-image: url("../images/work-seegeletrico.png");
+    @include image-2x("../images/work-seegeletrico2x.png", 100%, auto);
+  }
+  &__ips {
+    background-image: url("../images/work-ips.png");
+    @include image-2x("../images/work-ips2x.png", 100%, auto);
+  }
+  &__mundoise {
+    background-image: url("../images/work-mundoise.png");
+    @include image-2x("../images/work-mundoise2x.png", 100%, auto);
+  }
+  &__simulador {
+    background-image: url("../images/work-simulador.png");
+    @include image-2x("../images/work-simulador2x.png", 100%, auto);
+  }
+  &__plataformadoar {
+    background-image: url("../images/work-plataformadoar.png");
+    @include image-2x("../images/work-plataformadoar2x.png", 100%, auto);
+  }
+  &__oc {
+    background-image: url("../images/work-oc.png");
+    @include image-2x("../images/work-oc2x.png", 100%, auto);
   }
 }
