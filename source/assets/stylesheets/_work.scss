@@ -14,6 +14,10 @@
   overflow: hidden;
   min-height: 400px;
 
+  &__logo {
+    text-align: center;
+  }
+
   &__logo-work {
     width: auto;
     height: auto;
