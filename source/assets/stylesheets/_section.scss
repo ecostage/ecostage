@@ -20,6 +20,10 @@
   background-color: $light-gray-bg;
   padding: 0;
   margin: 0;
-  padding-top: $large-spacing;;
-  margin-bottom: $large-spacing;
+  padding-top: $xlarge-spacing;
+  margin-bottom: $xlarge-spacing;
+}
+
+.section-end {
+  margin-bottom: 0;
 }
