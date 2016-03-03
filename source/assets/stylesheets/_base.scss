@@ -33,9 +33,13 @@ h6 {
   font-weight: normal;
 }
 
-h1,
-h2 {
+h1 {
   font-size: $heading-font-size;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: $medium-font-size;
 }
 
 h3,
