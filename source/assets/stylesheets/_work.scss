@@ -14,6 +14,10 @@
   overflow: hidden;
   min-height: 400px;
 
+  &__logo {
+    text-align: center;
+  }
+
   &__logo-work {
     width: auto;
     height: auto;
@@ -28,6 +32,7 @@
     background-position: top;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    @extend .base-box-shadow;
 
     @include media($tablet) { 
       width: 100%;
@@ -39,14 +44,14 @@
     &--left { 
       float: left; 
       text-align: right;
-      left: 0px;
+      left: rem(5px);
       @include media($tablet) { text-align: center;}
     }
     
     &--right { 
       float: right; 
       text-align: left;
-      right: 0px;
+      right: rem(5px);
       @include media($tablet) { text-align: center;}
     }
   }
