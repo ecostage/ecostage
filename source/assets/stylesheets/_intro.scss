@@ -15,7 +15,7 @@
     width: 70%;
     margin-left:-35%;
     text-align: center;
-    top: 13%;
+    top: 20%;
   }
 
   &__image {
@@ -44,14 +44,14 @@
     &-span {
       display: block;
 
-      @include media(new-breakpoint(max-width 886px)) { 
+      @include media(new-breakpoint(max-width $tablet)) { 
         display: inline;
       }
 
       @include media($mobile) { 
         display: inline;
         font-size: $base-font-size;
-      } 
+      }
     }
   }
 }

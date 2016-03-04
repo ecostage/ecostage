@@ -35,10 +35,27 @@
     @extend .base-box-shadow;
 
     @include media($tablet) { 
-      width: 100%;
+      width: rem(480px);
+      height: rem(335px);
+      margin-left: auto;
+      margin-right: auto;
+      float: none !important;
       padding: 0 $base-spacing $base-spacing;
       position: relative;
       background-position: center;
+      background-size: contain;
+    }
+
+    @include media($mobile) { 
+      width: rem(320px);
+      height: rem(223px);
+      margin-left: auto;
+      margin-right: auto;
+      float: none !important;
+      padding: 0 $base-spacing $base-spacing;
+      position: relative;
+      background-position: center;
+      background-size: contain;
     }
 
     &--left { 

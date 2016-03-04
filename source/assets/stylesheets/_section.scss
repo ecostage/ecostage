@@ -23,6 +23,15 @@
   margin: 0;
   padding-top: $xlarge-spacing;
   margin-bottom: $xlarge-spacing;
+
+  @include media($tablet) { 
+    padding-top: $base-spacing;
+    margin-bottom: $base-spacing;
+  }
+  @include media($mobile) { 
+    padding-top: $base-spacing;
+    margin-bottom: $base-spacing;
+  }
 }
 
 .section-end {
