@@ -89,6 +89,11 @@
       padding: 0 $base-spacing $base-spacing;
     }
 
+    @include media($mobile) { 
+      width: 100%;
+      padding: 0 $base-spacing 0;
+    }
+
     &--left { 
       float: left; 
       @include media($tablet) { text-align: left;}
