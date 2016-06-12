@@ -1,6 +1,6 @@
 ---
 title: EcoStage
-keywords: sustantabilidade, plataforma, projetos, ecosistema, gases, efeito, estufa, poluição, ambiental, mundial, clima, COP, ecosistema, ecologia, ongs
+keywords: projetos, ferramentas, plataformas, sistemas, app, aplicativos web, sustentavel, sustentabilidade, desenvolvimento, ruby, rails, cms, css, javascript, js, sass, parceiros, mundo, ambiental, social, ecostage, eco, stage, soluções, desafios, ecosistema, gases, efeito, estufa, poluição, ambiental, mundial, clima, COP, ecosistema, ecologia, ongs, platforms, projects, environment, gases, gee, ghg, green, house, future, system, tool, development, sustainable
 intro: true
 ---
 
@@ -36,45 +36,45 @@ intro: true
 
 <section class="section work">
   <h2 class="section-title">
-    Projetos
+    <%= I18n.t('index.projects.title') %>
   </h2>
-  <p class="text-center">Conheça as soluções de tecnologia que já resultaram de nossa colaboração com projetos de sustentabilidade</p>
+  <p class="text-center"><%= I18n.t('index.projects.subtitle') %></p>
 
   <div id="js-our-projects" class="owl-carousel owl-projects">    
     
     <div class="item">
       <div class="item-imagem">
-        <%= image_tag "work-seeg.png", class: "owl-imgslider", alt: "Sistema Seeg" %>
+        <%= image_tag "work-seeg.png", class: "owl-imgslider", alt: "SEEG" %>
       </div>
       <div class="item-text">
-        <%= image_tag "logowork-seeg.svg", class: "project-item__logo-work", alt: "Seeg" %>
-        <p>O Sistema de Estimativas de Emissões de Gases de Efeito Estufa (SEEG) é uma iniciativa do Observatório do Clima que compreende a produção de estimativas anuais das emissões de gases de efeito estufa (GEE) no Brasil...</p>
+        <%= image_tag "logowork-seeg.svg", class: "project-item__logo-work", alt: "SEEG" %>
+        <p><%= I18n.t('index.projects.seeg_description') %></p>
       </div>
     </div>
 
     <div class="item">
       <div class="item-imagem">
-        <%= image_tag "work-mapbiomas.png", class: "owl-imgslider", alt: "Sistema MapBiomas" %>
+        <%= image_tag "work-mapbiomas.png", class: "owl-imgslider", alt: "MapBiomas" %>
       </div>
       <div class="item-text">
         <%= image_tag "logowork-mapbiomas.svg", class: "project-item__logo-work", alt: "MapBiomas" %>
-        <p>O MapBiomas é uma iniciativa do SEEG/OC (Sistema de Estimativas de Emissões de Gases de Efeito Estufa do Observatório do Clima) e é produzido por uma rede colaborativa de co-criadores formado por ONGs...</p>
+        <p><%= I18n.t('index.projects.seeg_description') %></p>
       </div>
     </div>
 
     <div class="item">
       <div class="item-imagem">
-        <%= image_tag "work-seegeletrico.png", class: "owl-imgslider", alt: "Sistema Seeg Elétrico" %>
+        <%= image_tag "work-seegeletrico.png", class: "owl-imgslider", alt: "Seeg Elétrico" %>
       </div>
       <div class="item-text">
         <%= image_tag "logowork-seegeletrico.svg", class: "project-item__logo-work", alt: "Seeg Elétrico"  %>
-        <p>O SEEG Monitor Elétrico é uma ferramenta de informação qualificada e com atualização diária sobre a composição da matriz elétrica brasileira e suas emissões de gases de efeito estufa...</p>
+        <p><%= I18n.t('index.projects.seeg_eletrico_description') %></p>
       </div>
     </div>
 
   </div>
 
   <p class="text-center">
-    <a class="link-button" href="work.html">Ver mais projetos</a>
+    <a class="link-button" href="work.html"><%= I18n.t('index.projects.more_projects') %></a>
   </p>
 </section>

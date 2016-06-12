@@ -1,0 +1,16 @@
+en:
+  nav:
+    about: about us
+    work: our work
+    team: our team
+    contact: contact us
+  team: Team
+  index:
+    intro: Technology for projects that act on the socio-environmental challenges of the 21st century.
+    projects:
+      title: Projects
+      subtitle: Known more about our work
+      seeg_description: The System Study Greenhouse Gas Emissions Estimates (SEEG) is a Climate Observatory’s initiative comprising the production of annual estimates of greenhouse gas emissions (GHG) in Brazil...
+      mapbiomas_description: A detailed interactive map that allows you to know the evolution of land-use and land use coverage in Brazilian territory. MapBiomas is a SEEG/OC initiative and is developed by a collaborative network of co-creators, such as NGOs...
+      seeg_eletrico_description: The SEEG’s Electric Monitor is a qualified tool for information and daily updates on the composition of the Brazilian energy matrix and its greenhouse gas emissions...
+      more_projects: See more
