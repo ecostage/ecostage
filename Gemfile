@@ -3,7 +3,6 @@
 source 'https://rubygems.org'
 
 gem 'font-awesome-sass'
-gem 'jquery-middleman'
 gem 'middleman', '~>3.4.0'
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
