@@ -2,7 +2,7 @@ require 'rack'
 require 'rack/contrib/try_static'
 
 class LanguageChooser
-  LANGS = ['pt-BR', 'en']
+  LANGS = ['en', 'pt-BR']
 
   def initialize(app)
     @app = app
