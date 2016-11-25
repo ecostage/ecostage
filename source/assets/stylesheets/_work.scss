@@ -3,12 +3,12 @@
 }
 
 .project-list {
-  @include outer-container; 
+  @include outer-container;
 }
 
 .project-item {
   margin-top: 0;
-  padding-bottom: 0; 
+  padding-bottom: 0;
   @include clearfix;
   position: relative;
   overflow: hidden;
@@ -21,8 +21,9 @@
   &__logo-work {
     width: auto;
     height: auto;
+    max-width: 240px;
+    max-height: 140px;
   }
-
 
   &__printscreen {
     width: 60%;
@@ -35,7 +36,7 @@
     background-repeat: no-repeat;
     @extend .base-box-shadow;
 
-    @include media($tablet) { 
+    @include media($tablet) {
       width: rem(480px);
       height: rem(335px);
       margin-left: auto;
@@ -47,7 +48,7 @@
       background-size: contain;
     }
 
-    @include media($mobile) { 
+    @include media($mobile) {
       width: rem(320px);
       height: rem(223px);
       margin-left: auto;
@@ -59,15 +60,15 @@
       background-size: contain;
     }
 
-    &--left { 
-      float: left; 
+    &--left {
+      float: left;
       text-align: right;
       left: rem(5px);
       @include media($tablet) { text-align: center;}
     }
-    
-    &--right { 
-      float: right; 
+
+    &--right {
+      float: right;
       text-align: left;
       right: rem(5px);
       @include media($tablet) { text-align: center;}
@@ -83,60 +84,92 @@
   &__caption {
     width: 40%;
     margin: $base-spacing 0;
-    padding: 0 $large-spacing; 
+    padding: 0 $large-spacing;
 
-    @include media($tablet) { 
+    @include media($tablet) {
       width: 100%;
       padding: 0 $base-spacing $base-spacing;
     }
 
-    @include media($mobile) { 
+    @include media($mobile) {
       width: 100%;
       padding: 0 $base-spacing 0;
     }
 
-    &--left { 
-      float: left; 
+    &--left {
       @include media($tablet) { text-align: left;}
+      float: left;
     }
-    &--right { 
-      float: right;
+    &--right {
       @include media($tablet) { text-align: left;}
+      float: right;
     }
   }
 }
 
 .printscreen {
   &__seeg {
-    background-image: url("../images/work-seeg.png");
     @include image-2x("../images/work-seeg2x.png", 100%, auto);
+    background-image: url("../images/work-seeg.png");
   }
+
   &__mapbiomas {
-    background-image: url("../images/work-mapbiomas.png");
     @include image-2x("../images/work-mapbiomas2x.png", 100%, auto);
+    background-image: url("../images/work-mapbiomas.png");
   }
+
   &__seegeletrico {
-    background-image: url("../images/work-seegeletrico.png");
     @include image-2x("../images/work-seegeletrico2x.png", 100%, auto);
+    background-image: url("../images/work-seegeletrico.png");
   }
+
   &__ips {
-    background-image: url("../images/work-ips.png");
     @include image-2x("../images/work-ips2x.png", 100%, auto);
+    background-image: url("../images/work-ips.png");
   }
+
   &__mundoise {
-    background-image: url("../images/work-mundoise.png");
     @include image-2x("../images/work-mundoise2x.png", 100%, auto);
+    background-image: url("../images/work-mundoise.png");
   }
+
   &__simulador {
-    background-image: url("../images/work-simulador.png");
     @include image-2x("../images/work-simulador2x.png", 100%, auto);
+    background-image: url("../images/work-simulador.png");
   }
+
   &__plataformadoar {
-    background-image: url("../images/work-plataformadoar.png");
     @include image-2x("../images/work-plataformadoar2x.png", 100%, auto);
+    background-image: url("../images/work-plataformadoar.png");
   }
+
   &__oc {
-    background-image: url("../images/work-oc.png");
     @include image-2x("../images/work-oc2x.png", 100%, auto);
+    background-image: url("../images/work-oc.png");
+  }
+
+  &__escolhas {
+    @include image-2x("../images/work-escolhas2x.png", 100%, auto);
+    background-image : url("../images/work-escolhas.png");
+  }
+
+  &__quantoe {
+    @include image-2x("../images/work-quantoe2x.png", 100%, auto);
+    background-image : url("../images/work-quantoe.png");
+  }
+
+  &__rpe {
+    @include image-2x("../images/work-rpe2x.png", 100%, auto);
+    background-image : url("../images/work-rpe.png");
+  }
+
+  &__1_5c {
+    @include image-2x("../images/work-1_5c2x.png", 100%, auto);
+    background-image : url("../images/work-1_5c.png");
+  }
+
+  &__obs-abc {
+    @include image-2x("../images/work-obs_abc2x.png", 100%, auto);
+    background-image : url("../images/work-obs_abc.png");
   }
 }
