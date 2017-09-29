@@ -21,7 +21,7 @@ pt-BR:
     contact_success_label: Mensagem enviada com sucesso!
     contact_success_description: Obrigado por entrar em contato! Assim que possível um membro de nossa equipe entrará em contato.
     topics:
-      new_projeto: Tem um novo projeto?
+      new_project: Tem um novo projeto?
       need_help: Precisa de ajuda com um projeto?
       bug: Encontrou um problema em um projeto?
       other: Outro
