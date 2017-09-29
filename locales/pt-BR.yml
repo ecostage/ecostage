@@ -1,5 +1,6 @@
 pt-BR:
   help:
+    instructions: Preencha as informações abaixo e entraremos em contato em breve.
     search_label: Com o que podemos te ajudar?
     search_error_label: Ocorreu um erro, por favor tente novamente
     no_results_label: Nenhum resultado encontrado
