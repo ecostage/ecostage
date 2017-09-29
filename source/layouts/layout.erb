@@ -25,5 +25,40 @@
     <%= partial 'partials/footer'%>
     <%= javascript_include_tag  "all" %>
     <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"9e04de72-a543-11e7-b466-0ec85169275a"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+    <script>
+       HS.beacon.config({
+        translation: {
+          searchLabel: '<%= I18n.t('help.search_label') %>',
+          searchErrorLabel: '<%= I18n.t('help.search_error_label') %>',
+          noResultsLabel: '<%= I18n.t('help.no_results_label') %>',
+          contactLabel: '<%= I18n.t('help.contact_label') %>',
+          attachFileLabel: '<%= I18n.t('help.attach_file_file') %>',
+          attachFileError: '<%= I18n.t('help.attach_file_error') %>',
+          fileExtensionError: '<%= I18n.t('help.file_extension_error') %>',
+          nameLabel: '<%= I18n.t('help.name_label') %>',
+          nameError: '<%= I18n.t('help.name_error') %>',
+          emailLabel: '<%= I18n.t('help.email_label') %>',
+          emailError: '<%= I18n.t('help.email_error') %>',
+          topicLabel: '<%= I18n.t('help.topic_label') %>',
+          topicError: '<%= I18n.t('help.topic_error') %>',
+          subjectLabel: '<%= I18n.t('help.subject_label') %>',
+          subjectError: '<%= I18n.t('help.subject_error') %>',
+          messageLabel: '<%= I18n.t('help.message_label') %>',
+          messageError: '<%= I18n.t('help.message_error') %>',
+          sendLabel: '<%= I18n.t('help.send_label') %>',
+          contactSuccessLabel: '<%= I18n.t('help.contact_success_label') %>',
+          contactSuccessDescription: '<%= I18n.t('help.contact_success_description') %>',
+        },
+        topics: [
+          { val: 'new-project', label: '<%= I18n.t('help.topic.new_project') %>'},
+          { val: 'need-help', label: '<%= I18n.t('help.topic.need_help') %>' },
+          { val: 'bug', label: '<%= I18n.t('help.topic.bug') %>'},
+          { val: 'other', label: '<%= I18n.t('help.topic.other') %>'}
+        ],
+        icon: 'message',
+        attachment: true,
+        instructions:'<%= I18n.t('help.instructions') %>'
+      });
+    </script>
   </body>
 </html>
