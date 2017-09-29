@@ -1,5 +1,6 @@
 en:
   help:
+    instructions: Preencha as informações abaixo e entraremos em contato em breve.
     search_label: What can we help you with?
     search_error_label: Your search timed out. Please double-check your internet connection and try again.
     no_results_label: No results found for
