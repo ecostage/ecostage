@@ -22,8 +22,8 @@ pt-BR:
     contact_success_description: Obrigado por entrar em contato! Assim que possível um membro de nossa equipe entrará em contato.
     topics:
       new_project: Tenho um novo projeto
-      need_help: Preciso de ajuda com um produto
-      bug: Encontrei um problema em um produto
+      need_help: Preciso de ajuda com um projeto
+      bug: Encontrei um problema em um projeto
       other: Outro
   nav:
     about: sobre
