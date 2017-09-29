@@ -1,18 +1,18 @@
 pt-BR:
   help:
-    search_label: Como podemos te ajudar?
+    search_label: Com o que podemos te ajudar?
     search_error_label: Ocorreu um erro, por favor tente novamente
     no_results_label: Nenhum resultado encontrado
-    contact_label: Envie uma mensagem
+    contact_label: Envie uma Mensagem
     attach_file_label: Anexe um arquivo
     attach_file_error: Tamanho máximo do arquivo é de 10mb
     file_extension_error: Extensão não permitida
     name_label: Seu nome
     name_error: Por favor, digite seu nome
     email_label: Seu email
-    email_error: Por favor, digite seu email
-    topic_label: Tópicos
-    topic_error: Por favor, selecione um tópico
+    email_error: Por favor, digite seu email válido
+    topic_label: Selecione um tópico
+    topic_error: Por favor, selecione um tópico na lista abaixo
     subject_label: Assunto
     subject_error: Por favor, digite um assunto
     message_label: Como podemos te ajudar?
