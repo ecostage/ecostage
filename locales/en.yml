@@ -21,9 +21,9 @@ en:
     contact_success_label: Message sent!
     contact_success_description: Thanks for reaching out! Someone from our team will get back to you soon.
     topics:
-      new_project: New project?
-      need_help: Need help with a project?
-      bug: Found a bug?
+      new_project: New project
+      need_help: Need help with a project
+      bug: Found a bug
       other: Other
   nav:
     about: about us
