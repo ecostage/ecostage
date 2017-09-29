@@ -9,5 +9,6 @@ $(document).ready(function() {
 
   $('.js-contact').click(function() {
     HS.beacon.toggle();
+    return false;
   });
 });
