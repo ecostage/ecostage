@@ -7,7 +7,7 @@ $(document).ready(function() {
     singleItem : true
   });
 
-  $('#js-contact').click(function() {
+  $('.js-contact').click(function() {
     HS.beacon.toggle();
   });
 });
